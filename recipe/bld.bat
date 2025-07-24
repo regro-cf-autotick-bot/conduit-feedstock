@@ -14,7 +14,7 @@ cmake -G "NMake Makefiles" ^
       -DCONDUIT_ENABLE_TESTS=OFF ^
       -Dgtest_disable_pthreads=ON ^
       -DPYTHON_EXECUTABLE:FILEPATH="%PYTHON%" ^
-      -DPYTHON_MODULE_INSTALL_PREFIX="%SP_DIR%" ^
+      -DPYTHON_MODULE_INSTALL_PREFIX="%SP_DIR:\=/%" ^
       -DHDF5_DIR:PATH="%LIBRARY_PREFIX%" ^
       ../src
 :: if errorlevel 1 exit 1
