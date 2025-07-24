@@ -21,6 +21,7 @@ requirements:
     - {{ compiler('cxx') }}
     - {{ compiler('fortran') }}  # [unix]
     - make                       # [linux]
+    - ninja                      # [win]
     - cmake
   host:
     - {{ mpi }}  # [mpi != 'nompi']
