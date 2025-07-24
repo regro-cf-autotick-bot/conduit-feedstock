@@ -27,6 +27,7 @@ requirements:
     - libpython-static  # [py>=38]
     - python
     - pip
+    - setuptools
     - numpy
     - openssl
     - hdf5
