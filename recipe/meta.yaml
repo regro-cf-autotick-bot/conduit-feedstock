@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win and vc<14]
 
 requirements:
@@ -19,7 +19,7 @@ requirements:
     - {{ compiler('c') }}
     - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
-    - {{ compiler('fortran') }}  # [unix]
+    - {{ compiler("fortran") }}
     - make                       # [linux]
     - cmake
   host:
